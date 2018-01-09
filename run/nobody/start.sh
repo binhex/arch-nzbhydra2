@@ -4,4 +4,4 @@
 mkdir -p /config/nzbhydra2
 
 # run app
-cd /usr/lib/nzbhydra2 && /usr/lib/nzbhydra2/nzbhydra2 --nobrowser --datafolder /config/nzbhydra2
+cd /usr/lib/nzbhydra2 && /usr/lib/nzbhydra2/nzbhydra2 --datafolder /config/nzbhydra2
