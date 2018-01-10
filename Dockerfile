@@ -29,9 +29,6 @@ VOLUME /config
 # map /data to host defined data path (used to store data from app)
 VOLUME /data
 
-# map /data to host defined data path (used to store data from app)
-VOLUME /media
-
 # expose port for webui
 EXPOSE 5076
 
