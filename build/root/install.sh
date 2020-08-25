@@ -35,7 +35,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="python2 jre10-openjdk-headless"
+pacman_packages="python2 jre11-openjdk-headless"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
