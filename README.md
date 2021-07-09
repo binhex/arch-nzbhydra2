@@ -4,9 +4,7 @@
 
 **Description**
 
-NZBHydra 2 is a meta search for NZB indexers. It provides easy access to a number of raw and newznab based indexers. You can search all your indexers from one place and use it as indexer source for tools like Sonarr or CouchPotato.
-
-It's a complete rewrite of NZBHydra (1). It's currently in Alpha.
+NZBHydra 2 is a meta search for newznab indexers and torznab trackers. It provides easy access to newznab indexers and many torznab trackers via Jackett. You can search all your indexers and trackers from one place and use it as an indexer source for tools like Sonarr, Radarr, Lidarr or CouchPotato.
 
 **Build notes**
 
@@ -17,7 +15,7 @@ Latest stable NZBHydra2 release from Arch User Repository (AUR).
 docker run -d \
     -p 5076:5076 \
     --name=<container name> \
-    -v <path for data files>:/data \
+    -v <path for torrent blackhole>:/data \
     -v <path for config files>:/config \
     -v /etc/localtime:/etc/localtime:ro \
     -e UMASK=<umask for created files> \
@@ -37,7 +35,7 @@ Please replace all user variables in the above command defined by <> with the co
 docker run -d \
     -p 5076:5076 \
     --name=nzbhydra2 \
-    -v /apps/docker/sabnzbd/watched:/data \
+    -v /apps/docker/torrent/blackhole:/data \
     -v /apps/docker/nzbhydra2:/config \
     -v /etc/localtime:/etc/localtime:ro \
     -e UMASK=000 \
