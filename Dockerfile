@@ -24,11 +24,7 @@ RUN chmod +x /root/*.sh /home/nobody/*.sh && \
 # docker settings
 #################
 
-# map /config to host defined config path (used to store configuration from app)
-VOLUME /config
-
-# map /data to host defined data path (used to store data from app)
-VOLUME /data
+OLUME /data
 
 # expose port for webui
 EXPOSE 5076
