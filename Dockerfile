@@ -27,8 +27,6 @@ RUN chmod +x /root/*.sh /home/nobody/*.sh && \
 # docker settings
 #################
 
-OLUME /data
-
 # expose port for webui
 EXPOSE 5076
 
