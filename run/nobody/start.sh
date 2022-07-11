@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/dumb-init /bin/bash
 
 # create dir to store config files in
 mkdir -p /config/nzbhydra2
