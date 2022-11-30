@@ -38,7 +38,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="jre11-openjdk-headless"
+pacman_packages="jre17-openjdk"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
