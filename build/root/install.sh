@@ -54,6 +54,13 @@ aur_packages="nzbhydra2"
 # call aur install script (arch user repo)
 source aur.sh
 
+# custom
+####
+
+# symlink java 11
+ln -fs '/usr/lib/jvm/java-11-openjdk/bin/java' '/usr/bin/java'
+archlinux-java set java-11-openjdk
+
 # container perms
 ####
 
