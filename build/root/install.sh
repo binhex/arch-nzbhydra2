@@ -38,7 +38,7 @@ fi
 ####
 
 # define pacman packages
-pacman_packages="jre11-openjdk"
+pacman_packages="jre17-openjdk-headless"
 
 # install compiled packages using pacman
 if [[ ! -z "${pacman_packages}" ]]; then
@@ -49,7 +49,7 @@ fi
 ####
 
 # define aur packages
-aur_packages="nzbhydra2"
+aur_packages="nzbhydra2-bin"
 
 # call aur install script (arch user repo)
 source aur.sh
@@ -57,9 +57,9 @@ source aur.sh
 # custom
 ####
 
-# symlink java 11
-ln -fs '/usr/lib/jvm/java-11-openjdk/bin/java' '/usr/bin/java'
-archlinux-java set java-11-openjdk
+# symlink java 17
+ln -fs '/usr/lib/jvm/java-17-openjdk/bin/java' '/usr/bin/java'
+archlinux-java set java-17-openjdk
 
 # container perms
 ####
