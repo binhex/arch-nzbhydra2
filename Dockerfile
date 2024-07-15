@@ -30,9 +30,6 @@ RUN chmod +x /root/*.sh /home/nobody/*.sh && \
 # docker settings
 #################
 
-# expose port for webui
-EXPOSE 5076
-
 # set permissions
 #################
 
