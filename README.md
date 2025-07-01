@@ -18,7 +18,6 @@ Latest stable NZBHydra2 release from Arch User Repository (AUR).
 
 ```bash
 docker run -d \
-
     -p 5076:5076 \
     --name=<container name> \
     -v <path for data files>:/data \
@@ -27,9 +26,7 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<UID for user> \
     -e PGID=<GID for user> \
-
     binhex/arch-nzbhydra2
-
 ```
 
 Please replace all user variables in the above command defined by <> with the
@@ -43,7 +40,6 @@ correct values.
 
 ```bash
 docker run -d \
-
     -p 5076:5076 \
     --name=nzbhydra2 \
     -v /apps/docker/sabnzbd/watched:/data \
@@ -52,9 +48,7 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-
     binhex/arch-nzbhydra2
-
 ```
 
 ## Notes
@@ -64,7 +58,6 @@ for the user you want to run the container as:-
 
 ```bash
 id <username>
-
 ```
 
 ___
